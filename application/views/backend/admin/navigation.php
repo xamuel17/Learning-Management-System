@@ -125,12 +125,7 @@
 				<li class = "<?php if($page_name == 'about') echo 'active'; ?>">
 					<a href="<?php echo site_url('admin/about'); ?>"><?php echo get_phrase('about'); ?></a>
 				</li>
-				<li class = "<?php if($page_name == 'themes') echo 'active'; ?>">
-					<a href="<?php echo site_url('admin/themes'); ?>"><?php echo get_phrase('themes'); ?></a>
-				</li>
-				<li class = "<?php if($page_name == 'mobile_app') echo 'active'; ?>">
-					<a href="<?php echo site_url('admin/mobile_app'); ?>"><?php echo get_phrase('mobile_app'); ?></a>
-				</li>
+			
 			</ul>
 		</li>
 	    </ul>
