@@ -94,14 +94,14 @@
                                                     <div class="col-md-10">
                                                         <select class="form-control select2" data-toggle="select2" name="sub_category_id" id="sub_category_id" required>
                                                             <option value=""><?php echo get_phrase('select_a_category'); ?></option>
-                                                            <?php foreach ($categories->result_array() as $category): ?>
-                                                                <optgroup label="<?php echo $category['name']; ?>">
-                                                                    <?php $sub_categories = $this->crud_model->get_sub_categories($category['id']);
+                                                   
+                                                             
+                                                                    <?php $sub_categories = $this->crud_model->get_sub_categories(0);
                                                                     foreach ($sub_categories as $sub_category): ?>
                                                                     <option value="<?php echo $sub_category['id']; ?>"><?php echo $sub_category['name']; ?></option>
                                                                 <?php endforeach; ?>
-                                                            </optgroup>
-                                                        <?php endforeach; ?>
+                                                         
+                                                      
                                                     </select>
                                                 </div>
                                             </div>
